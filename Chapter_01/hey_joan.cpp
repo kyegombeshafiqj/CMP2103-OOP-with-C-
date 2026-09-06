@@ -1,5 +1,6 @@
 // A program that prompts for a first name and return a greeting.
-import std;
+//import std;
+#include <iostream>
 using namespace std;
 
 int main()
