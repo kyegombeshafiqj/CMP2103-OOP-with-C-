@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 #include <iomanip>
-#define KILOGRAMS 0.45359237
+#define KILOGRAMS 0.4539237
 #define METERS 0.0254
 double convert_to_kilograms(double weight){
     return(weight*KILOGRAMS);
@@ -23,13 +23,13 @@ int main(){
     BMI = (weight_in_kilograms/(height_in_meters*height_in_meters) );
     cout<<"The BMI is: "<<fixed<<setprecision(2)<<BMI<<endl;
 
-    if(BMI < 18.5){
+    if(BMI< 18.5){
         cout<<"Underweight"<<endl;
-    } else if(BMI <= 24.9){
+    }
+    if(18.5<=BMI<=24.9){
         cout<<"Normal"<<endl;
-    } else if(BMI <= 29.9){
-        cout<<"Overweight"<<endl;
-    } else {
+    }
+    if(BMI>30.0){
         cout<<"Obese"<<endl;
     }
      
